@@ -1,9 +1,8 @@
-# YNAB + AI
+# Nuxt Starter Template
 
-Just having fun with GPT-4. Had an idea about feeding my YNAB data (without sensitive financial institution account info, of course) into GPT-4 and asking the model various questions about my finances. Questions like:
+A custom Nuxt3 template that has the basic building blocks I prefer for new projects.
 
-- Based on my previous transaction history, do you see anything out of the ordinary?
-- Based on these financial goals, what are some actions I could take to meet them?
-- ...
+## Stack:
 
-Decided to build this with Nuxt3.
+- Nuxt3
+- Tailwind
