@@ -19,3 +19,9 @@ Baked-in integrations/plugins that can be ripped away as needed.
 - [ ] Add Auth0 Integration
 - [ ] Add Analytics Integration
 - [ ] Add Error Reporting Integration
+
+### How to get started
+
+1. Fork this repo and clone it to your local machine
+2. Run `npm install or yarn install` to install dependencies
+3. Find your app running on localhost:3000
