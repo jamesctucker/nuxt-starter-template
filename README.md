@@ -13,7 +13,7 @@ A custom Nuxt3 template that has the basic building blocks I prefer for new proj
 
 Baked-in integrations/plugins that can be ripped away as needed.
 
-- [ ] Add Supabase integration
+- [ ] Add Supabase + SupabaseAuth integration
 - [ ] Add Stripe Integration
 - [x] Add OpenAI GPT-4 Integration
 - [ ] Add Auth0 Integration
