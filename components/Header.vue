@@ -5,7 +5,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/vue/24/outline";
 
 const navigation = [
   { name: "Dogs", href: "/dogs" },
-  { name: "More Dogs", href: "#" },
+  { name: "GenAI", href: "/gen-ai" },
 ];
 
 const mobileMenuOpen = ref(false);
