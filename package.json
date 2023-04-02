@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-app",
+  "name": "nuxt-starter-app",
   "private": true,
   "scripts": {
     "build": "nuxt build",
@@ -14,8 +14,6 @@
   "dependencies": {
     "@headlessui/vue": "^1.7.12",
     "@heroicons/vue": "^2.0.17",
-    "@nuxtjs/tailwindcss": "^6.6.5",
-    "openai": "^3.2.1",
-    "ynab": "^1.47.0"
+    "@nuxtjs/tailwindcss": "^6.6.5"
   }
 }
