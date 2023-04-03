@@ -2,11 +2,17 @@
 import { ref } from "vue";
 
 const dogs = ref([]);
+const error = ref(null);
 
 const handleClick = async () => {
-  const response = await $fetch(`/api/v1/dogs`);
+  const { data, error } = await $fetch(`/api/v1/dogs`);
 
-  dogs.value = await response.dogs;
+  if (error) {
+    console.error(error);
+    return;
+  }
+
+  dogs.value = data;
 };
 </script>
 
@@ -20,6 +26,12 @@ const handleClick = async () => {
     <div v-if="dogs?.length === 0" class="my-8">
       <p class="text-gray-600">
         You don't have any data yet. Please click the button to load some.
+      </p>
+    </div>
+    <!-- error state -->
+    <div v-else-if="error" class="my-8">
+      <p class="text-red-600">
+        There was an error loading your data. Please try again.
       </p>
     </div>
 
