@@ -13,7 +13,7 @@ const mobileMenuOpen = ref(false);
 <template>
   <header class="bg-white">
     <nav
-      class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
+      class="mx-auto flex items-center justify-between p-6 lg:px-8"
       aria-label="Global"
     >
       <a href="/" class="-m-1.5 p-1.5">
