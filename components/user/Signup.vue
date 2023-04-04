@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from "vue";
 import TextInput from "@/components/ui_library/TextInput.vue";
+import Button from "@/components/ui_library/Button.vue";
 
 const email = ref("");
 const password = ref("");
@@ -72,12 +73,7 @@ const handleSubmit = async (e) => {
         </fieldset>
 
         <!-- submit button -->
-        <button
-          type="submit"
-          class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-sm text-white bg-indigo-800 hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-        >
-          Sign Up
-        </button>
+        <Button type="submit"><template #copy>Sign Up</template></Button>
       </form>
     </div>
   </div>
