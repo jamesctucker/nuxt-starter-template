@@ -2,6 +2,8 @@
 import { ref } from "vue";
 import TextInput from "@/components/ui_library/TextInput.vue";
 import Button from "@/components/ui_library/Button.vue";
+import GoogleButton from "@/components/user/GoogleButton.vue";
+import Divider from "@/components/ui_library/Divider.vue";
 
 const email = ref("");
 const password = ref("");
@@ -28,23 +30,10 @@ const handleSubmit = async (e) => {
         instead.
       </p>
       <form @submit="handleSubmit">
-        <button
-          type="button"
-          class="w-full flex justify-center items-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-sm text-gray-700 bg-white hover:bg-gray-50"
-        >
-          Sign up with Google
-        </button>
-        <!-- google sign up button -->
-        <div class="flex items-center justify-center my-4">
-          <div class="relative w-full">
-            <div class="absolute inset-0 flex items-center">
-              <div class="w-full border-t border-gray-300" />
-            </div>
-            <div class="relative flex justify-center text-sm">
-              <span class="px-2 bg-white text-gray-500">or</span>
-            </div>
-          </div>
-        </div>
+        <GoogleButton />
+
+        <Divider class="my-4" copy="or" />
+
         <TextInput
           class="mb-3"
           v-model="email"
@@ -75,11 +64,9 @@ const handleSubmit = async (e) => {
           required
         />
 
-        <div class="mt-5">
-          <Button type="submit"
-            ><template #copy>Create my account</template></Button
-          >
-        </div>
+        <Button class="mt-5" type="submit"
+          ><template #copy>Create my account</template></Button
+        >
       </form>
     </div>
   </div>
